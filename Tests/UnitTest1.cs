@@ -1,3 +1,5 @@
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+
 namespace Tests;
 
 public class Tests {
@@ -5,7 +7,12 @@ public class Tests {
 	public void Setup() { }
 
 	[Test]
-	public void Test1() {
-		Assert.Pass();
+	public void asdfjhsakdhjf() {
+		Assert.AreEqual(false, IsLeapYear(1997));
+	}
+
+	private bool IsLeapYear(int i)
+	{
+		throw new NotImplementedException();
 	}
 }

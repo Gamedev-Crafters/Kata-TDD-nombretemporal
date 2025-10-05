@@ -13,6 +13,13 @@ public class Tests {
 	{
 		Assert.That("2", Is.EqualTo(FizzBuzz.Convert(2)));
 	}
+
+	[Test]
+
+	public void ThreeConvertsToFizz()
+	{
+		Assert.That("Fizz", Is.EqualTo(FizzBuzz.Convert(3)));
+	}
 }
 
 public class FizzBuzz

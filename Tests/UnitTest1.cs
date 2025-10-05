@@ -72,21 +72,31 @@ public class FizzBuzz
 {
 	public static string Convert(int number)
 	{
-		if (number % 3 == 0 && number % 5 == 0)
+		if (IsMultipleOf3(number) && IsMultipleOf5(number))
 		{
 			return "FizzBuzz";
 		}
 		
-		if (number % 3 == 0)
+		if (IsMultipleOf3(number))
 		{
 			return "Fizz";
 		}
 		
-		if (number % 5 == 0)
+		if (IsMultipleOf5(number))
 		{
 			return "Buzz";
 		}
 		
 		return number.ToString();
+	}
+
+	private static bool IsMultipleOf5(int number)
+	{
+		return number % 5 == 0;
+	}
+
+	private static bool IsMultipleOf3(int number)
+	{
+		return number % 3 == 0;
 	}
 }

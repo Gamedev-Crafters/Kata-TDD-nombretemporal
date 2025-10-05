@@ -31,6 +31,11 @@ public class Tests {
 	{
 		Assert.That("Buzz", Is.EqualTo(FizzBuzz.Convert(5)));
 	}
+	[Test]
+	public void SixConvertsToFizz()
+	{
+		Assert.That("Fizz", Is.EqualTo(FizzBuzz.Convert(6)));
+	}
 }
 
 

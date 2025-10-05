@@ -31,16 +31,26 @@ public class Tests {
 	{
 		Assert.That("Buzz", Is.EqualTo(FizzBuzz.Convert(5)));
 	}
+	
 	[Test]
 	public void SixConvertsToFizz()
 	{
 		Assert.That("Fizz", Is.EqualTo(FizzBuzz.Convert(6)));
 	}
+	
 	[Test]
 	public void NineConvertsToFizz()
 	{
 		Assert.That("Fizz", Is.EqualTo(FizzBuzz.Convert(9)));
 	}
+	
+	[Test]
+	public void TenConvertsToBuzz()
+	{
+		Assert.That("Buzz", Is.EqualTo(FizzBuzz.Convert(10)));
+	}
+	
+	
 }
 
 
@@ -61,10 +71,12 @@ public class FizzBuzz
 		{
 			return "Fizz";
 		}
+		
 		if (number == 5)
 		{
 			return "Buzz";
 		}
+		
 		return number.ToString();
 	}
 }

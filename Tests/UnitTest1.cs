@@ -13,7 +13,7 @@ public class Tests {
 	public void OneReturnsOne()
 	{
 		FizzBuzz fizzBuzz = new FizzBuzz();
-		Assert.Equals(fizzBuzz.Convert(1), 1);
+		Assert.AreEqual(fizzBuzz.Convert(1), 1);
 	}
 	
 }
@@ -22,6 +22,6 @@ public class FizzBuzz
 {
 	public int Convert(int i)
 	{
-		return 0;
+		return 1;
 	}
 }

@@ -17,8 +17,8 @@ public class Tests {
 
 public class FizzBuzz
 {
-	public static string Convert(int i)
+	public static string Convert(int number)
 	{
-		return i.ToString();
+		return number.ToString();
 	}
 }

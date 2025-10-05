@@ -2,7 +2,7 @@ namespace Tests;
 
 public class Tests {
 	[Test]
-	public void OneReturnsOne()
+	public void OneConvertsToOne()
 	{
 		Assert.That(1, Is.EqualTo(FizzBuzz.Convert(1)));
 	}

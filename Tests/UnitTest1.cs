@@ -15,10 +15,15 @@ public class Tests {
 	}
 
 	[Test]
-
 	public void ThreeConvertsToFizz()
 	{
 		Assert.That("Fizz", Is.EqualTo(FizzBuzz.Convert(3)));
+	}
+	
+	[Test]
+	public void FourConvertsToFour()
+	{
+		Assert.That("4", Is.EqualTo(FizzBuzz.Convert(4)));
 	}
 }
 

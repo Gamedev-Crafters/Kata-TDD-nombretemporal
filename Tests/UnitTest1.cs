@@ -4,14 +4,14 @@ public class Tests {
 	[Test]
 	public void OneConvertsToOne()
 	{
-		Assert.That(1, Is.EqualTo(FizzBuzz.Convert(1)));
+		Assert.That("1", Is.EqualTo(FizzBuzz.Convert(1)));
 	}
 }
 
 public class FizzBuzz
 {
-	public static int Convert(int i)
+	public static string Convert(int i)
 	{
-		return 1;
+		return "1";
 	}
 }
